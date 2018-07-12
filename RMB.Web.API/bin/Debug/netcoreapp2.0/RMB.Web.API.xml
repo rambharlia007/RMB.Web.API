@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RMB.Web.API</name>
+    </assembly>
+    <members>
+        <member name="M:RMB.Web.API.Controllers.ValuesController.Get">
+            <summary>
+            Get List of values
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

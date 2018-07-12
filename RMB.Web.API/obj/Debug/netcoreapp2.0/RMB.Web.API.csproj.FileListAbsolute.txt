@@ -8,4 +8,4 @@ D:\RMB.Web.API\RMB.Web.API\bin\Debug\netcoreapp2.0\RMB.Web.API.dll
 D:\RMB.Web.API\RMB.Web.API\bin\Debug\netcoreapp2.0\RMB.Web.API.pdb
 D:\RMB.Web.API\RMB.Web.API\obj\Debug\netcoreapp2.0\RMB.Web.API.dll
 D:\RMB.Web.API\RMB.Web.API\obj\Debug\netcoreapp2.0\RMB.Web.API.pdb
-D:\RMB.Web.API\RMB.Web.API\obj\Debug\netcoreapp2.0\RMB.Web.API.csprojResolveAssemblyReference.cache
+D:\RMB.Web.API\RMB.Web.API\bin\Debug\netcoreapp2.0\RMB.Web.API.xml
