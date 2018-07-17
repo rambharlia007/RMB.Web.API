@@ -24,4 +24,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RMB.Web.Domain\RMB.Web.Domain.csproj" />
+    <ProjectReference Include="..\RMB.Web.Repository\RMB.Web.Repository.csproj" />
+  </ItemGroup>
+
 </Project>

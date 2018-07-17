@@ -1,0 +1,12 @@
+D:\RMB.Web.API\RMB.Web.Domain\obj\Debug\netcoreapp2.0\RMB.Web.Domain.csprojResolveAssemblyReference.cache
+D:\RMB.Web.API\RMB.Web.Domain\obj\Debug\netcoreapp2.0\RMB.Web.Domain.csproj.CoreCompileInputs.cache
+D:\RMB.Web.API\RMB.Web.Domain\obj\Debug\netcoreapp2.0\RMB.Web.Domain.AssemblyInfoInputs.cache
+D:\RMB.Web.API\RMB.Web.Domain\obj\Debug\netcoreapp2.0\RMB.Web.Domain.AssemblyInfo.cs
+D:\RMB.Web.API\RMB.Web.Domain\bin\Debug\netcoreapp2.0\RMB.Web.Domain.deps.json
+D:\RMB.Web.API\RMB.Web.Domain\bin\Debug\netcoreapp2.0\RMB.Web.Domain.dll
+D:\RMB.Web.API\RMB.Web.Domain\bin\Debug\netcoreapp2.0\RMB.Web.Domain.pdb
+D:\RMB.Web.API\RMB.Web.Domain\obj\Debug\netcoreapp2.0\RMB.Web.Domain.dll
+D:\RMB.Web.API\RMB.Web.Domain\obj\Debug\netcoreapp2.0\RMB.Web.Domain.pdb
+D:\RMB.Web.API\RMB.Web.Domain\bin\Debug\netcoreapp2.0\Newtonsoft.Json.dll
+D:\RMB.Web.API\RMB.Web.Domain\bin\Debug\netcoreapp2.0\Newtonsoft.Json.xml
+D:\RMB.Web.API\RMB.Web.Domain\obj\Debug\netcoreapp2.0\RMB.Web.Domain.csproj.CopyComplete

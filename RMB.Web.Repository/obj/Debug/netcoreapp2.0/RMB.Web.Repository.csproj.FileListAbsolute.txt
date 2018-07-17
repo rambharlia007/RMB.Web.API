@@ -1,0 +1,14 @@
+D:\RMB.Web.API\RMB.Web.Repository\bin\Debug\netcoreapp2.0\RMB.Web.Repository.deps.json
+D:\RMB.Web.API\RMB.Web.Repository\bin\Debug\netcoreapp2.0\RMB.Web.Repository.dll
+D:\RMB.Web.API\RMB.Web.Repository\bin\Debug\netcoreapp2.0\RMB.Web.Repository.pdb
+D:\RMB.Web.API\RMB.Web.Repository\obj\Debug\netcoreapp2.0\RMB.Web.Repository.csprojResolveAssemblyReference.cache
+D:\RMB.Web.API\RMB.Web.Repository\obj\Debug\netcoreapp2.0\RMB.Web.Repository.csproj.CoreCompileInputs.cache
+D:\RMB.Web.API\RMB.Web.Repository\obj\Debug\netcoreapp2.0\RMB.Web.Repository.AssemblyInfoInputs.cache
+D:\RMB.Web.API\RMB.Web.Repository\obj\Debug\netcoreapp2.0\RMB.Web.Repository.AssemblyInfo.cs
+D:\RMB.Web.API\RMB.Web.Repository\obj\Debug\netcoreapp2.0\RMB.Web.Repository.dll
+D:\RMB.Web.API\RMB.Web.Repository\obj\Debug\netcoreapp2.0\RMB.Web.Repository.pdb
+D:\RMB.Web.API\RMB.Web.Repository\bin\Debug\netcoreapp2.0\RMB.Web.Domain.dll
+D:\RMB.Web.API\RMB.Web.Repository\bin\Debug\netcoreapp2.0\RMB.Web.Domain.pdb
+D:\RMB.Web.API\RMB.Web.Repository\obj\Debug\netcoreapp2.0\RMB.Web.Repository.csproj.CopyComplete
+D:\RMB.Web.API\RMB.Web.Repository\bin\Debug\netcoreapp2.0\Newtonsoft.Json.dll
+D:\RMB.Web.API\RMB.Web.Repository\bin\Debug\netcoreapp2.0\Newtonsoft.Json.xml

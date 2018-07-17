@@ -34,27 +34,31 @@ namespace RMB.Web.API
         {
 
             services.AddDbContext<RMBWebAPIContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("RMBWebAPIContext"))); 
+            options.UseSqlServer(Configuration.GetConnectionString("RMBWebAPIContext")));
 
             services.AddIdentity<IdentityUser, IdentityRole>()
-                    .AddEntityFrameworkStores<RMBWebAPIContext>();
+                    .AddEntityFrameworkStores<RMBWebAPIContext>().AddDefaultTokenProviders();
 
-            services.Configure<JWTSettings>(Configuration.GetSection("JWTSettings"));
             services.AddMvc();
-            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            //.AddJwtBearer(options =>
-            //{
-            //    options.TokenValidationParameters = new TokenValidationParameters
-            //    {
-            //        ValidateIssuer = true,
-            //        ValidateAudience = true,
-            //        ValidateLifetime = true,
-            //        ValidateIssuerSigningKey = true,
-            //        ValidIssuer = Configuration["Jwt:Issuer"],
-            //        ValidAudience = Configuration["Jwt:Issuer"],
-            //        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
-            //    };
-            //});
+            services.AddAuthentication(options=> {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme; ;
+                options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme; ;
+            })
+            .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = Configuration["Jwt:Issuer"],
+                    ValidAudience = Configuration["Jwt:Issuer"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
+                };
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "RMB Web API", Version = "v1", Contact = new Contact { Name = "Ram Bharlia", Email = "rambharlia007@gmail.com", Url = "http://rambharlia007.github.io" } });
@@ -73,9 +77,6 @@ namespace RMB.Web.API
                 var path = AppDomain.CurrentDomain.BaseDirectory + @"RMB.Web.API.xml";
                 c.IncludeXmlComments(path);
             });
-
-           
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -94,8 +95,8 @@ namespace RMB.Web.API
                 c.DocumentTitle = "RMB-Web-API";
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "RMB Web API");
             });
+
             app.UseMvc();
-            app.UseIdentity();
         }
     }
 }

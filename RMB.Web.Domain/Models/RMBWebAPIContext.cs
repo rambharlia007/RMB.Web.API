@@ -19,11 +19,6 @@ namespace RMB.Web.API.Models
 
         public virtual DbSet<Actor> Actors { get; set; }
         public virtual DbSet<ActorMovie> Actor_Movies { get; set; }
-        //public virtual DbSet<AspNetRoles> AspNetRoles { get; set; }
-        //public virtual DbSet<AspNetUserClaims> AspNetUserClaims { get; set; }
-        //public virtual DbSet<AspNetUserLogins> AspNetUserLogins { get; set; }
-        //public virtual DbSet<AspNetUserRoles> AspNetUserRoles { get; set; }
-        //public virtual DbSet<AspNetUsers> AspNetUsers { get; set; }
         public virtual DbSet<Director> Directors { get; set; }
         public virtual DbSet<Movie> Movies { get; set; }
         public virtual DbSet<Producer> Producers { get; set; }
@@ -41,11 +36,16 @@ namespace RMB.Web.API.Models
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Actor>(entity =>
             {
-                entity.Property(e => e.DateOfBirth).HasColumnType("datetime");
-
+                entity.HasKey(e => e.Id);
+                entity.Property(e => e.Id).HasColumnName("Id");
+                entity.Property(e => e.DateOfBirth).HasColumnName("DateOfBirth");
+                entity.Property(e => e.Name).HasColumnName("Name");
+                entity.Property(e => e.Description).HasColumnName("Description");
                 entity.Property(e => e.Description)
                     .IsRequired()
                     .HasMaxLength(500);
+
+                entity.ToTable("Actor");
             });
 
             modelBuilder.Entity<ActorMovie>(entity =>
