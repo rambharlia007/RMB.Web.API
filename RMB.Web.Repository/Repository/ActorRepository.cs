@@ -7,37 +7,11 @@ using System.Text;
 
 namespace RMB.Web.Repository.Repository
 {
-    public class ActorRepository : IActorRepository<Actor>
+    public class ActorRepository : GenericRepository<Actor>, IActorRepository<Actor>
     {
-        private RMBWebAPIContext _context;
-        public ActorRepository()
+        public ActorRepository(RMBWebAPIContext context) : base(context)
         {
-            _context = new RMBWebAPIContext();
-        }
-        public void Delete(Actor entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Actor FindById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IQueryable<Actor> Get()
-        {
-            return _context.Actors;
-        }
-
-        public void Insert(Actor entity)
-        {
-            _context.Actors.Add(entity);
-            _context.SaveChanges();
-        }
-
-        public void Update(Actor entity)
-        {
-            throw new NotImplementedException();
+          
         }
     }
 }

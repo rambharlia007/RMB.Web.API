@@ -14,9 +14,11 @@ namespace RMB.Web.API.Controllers
     public class ActorController : Controller
     {
         private ActorRepository actorRepository;
+        private RMBWebAPIContext _context;
         public ActorController()
         {
-            actorRepository = new ActorRepository();
+            _context = new RMBWebAPIContext();
+            actorRepository = new ActorRepository(_context);
         }
 
         // GET: api/Actor
@@ -37,6 +39,7 @@ namespace RMB.Web.API.Controllers
         public void Post([FromBody]Actor actor)
         {
             actorRepository.Insert(actor);
+            actorRepository.Save();
         }
         
         // PUT: api/Actor/5

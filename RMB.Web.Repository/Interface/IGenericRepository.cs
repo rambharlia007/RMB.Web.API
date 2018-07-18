@@ -6,12 +6,13 @@ using System.Text;
 
 namespace RMB.Web.Repository.Interface
 {
-    interface IGenericRepository<T>
+    interface IGenericRepository<TEntity>
     {
-        IQueryable<T> Get();
-        T FindById(int id);
-        void Insert(T entity);
-        void Delete(T entity);
-        void Update(T entity);
+        IQueryable<TEntity> Get();
+        TEntity FindById(int id);
+        void Insert(TEntity entity);
+        void Delete(TEntity entity);
+        void Update(TEntity entity);
+        void Save();
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RMB.Web.Repository.Interface
 {
-    interface IActorRepository<T>: IGenericRepository<T>
+    interface IActorRepository<T>
     {
     }
 }
