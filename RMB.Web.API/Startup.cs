@@ -87,6 +87,7 @@ namespace RMB.Web.API
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
             app.UseAuthentication();
             app.UseSwagger();
             app.UseSwaggerUI(c =>

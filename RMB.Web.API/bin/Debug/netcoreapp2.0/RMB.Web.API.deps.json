@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "b260c9d0f820e6c0c11e6b09e8dcb8fed9e80949"
+    "signature": "43cdbddd0f6488adbbbe2e4ed2175096561391b3"
   },
   "compilationOptions": {
     "defines": [
@@ -23,6 +23,7 @@
     ".NETCoreApp,Version=v2.0": {
       "RMB.Web.API/1.0.0": {
         "dependencies": {
+          "CaptchaGen.NetCore": "1.0.2",
           "JWT": "4.0.0",
           "Microsoft.AspNetCore.All": "2.0.6",
           "Microsoft.EntityFrameworkCore.Tools": "2.1.1",
@@ -37,6 +38,41 @@
         },
         "compile": {
           "RMB.Web.API.dll": {}
+        }
+      },
+      "CaptchaGen.NetCore/1.0.2": {
+        "dependencies": {
+          "CoreCompat.System.Drawing": "1.0.0-beta006",
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/CaptchaGen.NetCore.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/CaptchaGen.NetCore.dll": {}
+        }
+      },
+      "CoreCompat.System.Drawing/1.0.0-beta006": {
+        "dependencies": {
+          "Microsoft.Win32.Primitives": "4.3.0",
+          "System.Collections.NonGeneric": "4.3.0",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Drawing.Primitives": "4.0.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/CoreCompat.System.Drawing.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/CoreCompat.System.Drawing.dll": {}
         }
       },
       "JWT/4.0.0": {
@@ -3182,6 +3218,12 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Drawing.Primitives/4.0.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0"
+        }
+      },
       "System.Dynamic.Runtime/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -4205,6 +4247,7 @@
       },
       "RMB.Web.Repository/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.1.1",
           "RMB.Web.Domain": "1.0.0"
         },
         "runtime": {
@@ -4395,6 +4438,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "CaptchaGen.NetCore/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IeKcflaTS0w0NqS3o30HfuvdYRfgFdyl2DXmkVPFOVf79HmTHOExHtiVufdSBUf4hrvcse+simvvBc927M/ssA==",
+      "path": "captchagen.netcore/1.0.2",
+      "hashPath": "captchagen.netcore.1.0.2.nupkg.sha512"
+    },
+    "CoreCompat.System.Drawing/1.0.0-beta006": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KOBeVy8FHx9zkXrIZAM8OdXPrimROmvfB02fOegrYIelNN/zWhsOwzONgD7gw7wOTJgAFfdwpme5CiMraJj47Q==",
+      "path": "corecompat.system.drawing/1.0.0-beta006",
+      "hashPath": "corecompat.system.drawing.1.0.0-beta006.nupkg.sha512"
     },
     "JWT/4.0.0": {
       "type": "package",
@@ -6054,6 +6111,13 @@
       "sha512": "sha512-duUtvQnCXXOeZ88xNKngXkr/r1/f97LOx5tg8P88G0X92wBkEBZdHKlsAtYoZRmTSUFly80FNW+974N+kygwLA==",
       "path": "system.diagnostics.tracing/4.3.0",
       "hashPath": "system.diagnostics.tracing.4.3.0.nupkg.sha512"
+    },
+    "System.Drawing.Primitives/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9lVRG1voBwzLGZkf1XFJrobdZDZ5ZHMU4FVTbXAbzehpN90yYgkUeo9GoEYdvkt/EXaaHZJAeuffXP4JBbY+Ig==",
+      "path": "system.drawing.primitives/4.0.0",
+      "hashPath": "system.drawing.primitives.4.0.0.nupkg.sha512"
     },
     "System.Dynamic.Runtime/4.3.0": {
       "type": "package",
